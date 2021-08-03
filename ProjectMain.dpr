@@ -1,0 +1,19 @@
+program ProjectMain;
+
+uses
+  Forms,
+  UMain in 'UMain.pas' {Form2},
+  UParseExpr in 'UParseExpr.pas',
+  UAllTypes in 'UAllTypes.pas',
+  UMakePrioritySp in 'UMakePrioritySp.pas',
+  UHelp in 'UHelp.pas' {Help};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.HelpFile := 'C:\Прога\2 сем\Курсач\All\Icons\ппп.ico';
+  Application.CreateForm(TForm1, MainForm);
+  Application.CreateForm(THelp, Help);
+  Application.Run;
+end.
